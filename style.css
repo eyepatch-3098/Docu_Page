@@ -1,0 +1,144 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 25vw 60vw;
+    grid-template-areas: "title main-doc";
+    background-color: black;
+}
+
+#title {
+    position: fixed;
+    width: 25vw;
+    height: 100vh;
+    background-color: rgb(83, 5, 57);
+    color: snow;
+    z-index: 1;
+}
+
+#main-doc {
+    margin-left: 25vw;
+    width: 73vw;
+    color: snow;
+}
+
+nav {
+    text-align: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: snow;
+}
+
+#doc-name {
+    background-color: rgba(102, 1, 68, 0.5);
+    padding: 20px 50px 20px 50px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 24px;
+}
+
+#doc-name:hover {
+    animation-name: name-hover;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes name-hover {
+    100%{
+        background-color: rgb(99, 38, 99);
+    }
+}
+
+#INTEGER_DATA_TYPE, #FLOAT_DATA_TYPE, #STRING_DATA_TYPE, #BOOLEAN_DATA_TYPE, #LIST_DATA_TYPE {
+    padding: 25px;
+    margin: 20px 0px 20px 20px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 16px;
+    position: relative;
+    height: 500px;
+}
+
+.topic {
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+article {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+code {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 14px;
+    color: tomato;
+}
+
+.code {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#nav-title {
+    padding: 24px 30px 24px 30px;
+    font-family:'Bebas Neue', cursive;
+    font-size: 20px;
+}
+
+.nav-links li {
+    padding: 50px 40px 50px 40px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 18px;
+}
+
+.nav-links li:hover {
+    animation-name: link-hover;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes link-hover {
+    100% {
+        background-color: rgb(49, 1, 47);
+    }
+}
+
+#INTEGER_DATA_TYPE:hover, #FLOAT_DATA_TYPE:hover, #STRING_DATA_TYPE:hover, #BOOLEAN_DATA_TYPE:hover, #LIST_DATA_TYPE:hover {
+    animation-name: section-hover;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes section-hover {
+    100%{
+        background-color: rgb(37, 11, 58);
+    }
+}
+
+ul {
+    border-top: whitesmoke;
+    border-style: dotted none none none;
+    padding-top: 20px;
+}
+
+#nav-title:hover {
+    animation-name: index-hover;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes index-hover {
+    100% {
+        background-color: rgba(0,0,0,0.8);
+    }
+}
